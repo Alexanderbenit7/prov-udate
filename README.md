@@ -1,3 +1,7 @@
+<div align="right">
+  <img src="./images/logo.png" alt="Lime Team Logo" width="200">
+</div>
+
 ## Assessed Homework
 ### Understanding Data and Their Environment - MSc Data Science 2024/25
 #### The University of Manchester
