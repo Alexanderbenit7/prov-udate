@@ -55,7 +55,6 @@ document
   wasGeneratedBy(ex:RegisteredLandOwnershipInformationDataset, ex:SurveyAboutLandOwnershipInUK, -)
 
   used(ex:SurveyAboutLandOwnershipInUK, ex:Qualtrics, -)
-
   used(ex:Qualtrics, ex:CollectionOfIndividualLevelResponses, -)
 
   wasAssociatedWith(ex:CollectionOfIndividualLevelResponses, ex:CitizensRegisteredAddressUK, -)
