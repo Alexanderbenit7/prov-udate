@@ -4,7 +4,6 @@
 
 ## Assessed Homework
 ### Understanding Data and Their Environment - MSc Data Science 2024/25
-#### The University of Manchester
 
 #### Lime Team
 
