@@ -1,11 +1,20 @@
-## Assesed homework
-### Understanding Data and their Environment
+## Assessed Homework
+### Understanding Data and Their Environment - MSc Data Science 2024/25
+#### The University of Manchester
 
 #### Lime Team
 
-+ Austin, Bruce
-+ Benites, Alexander
-+ Huang, Jiahui
-+ New, Daniel
+- Austin, Bruce
+- Benites, Alexander
+- Huang, Jiahui
+- New, Daniel
 
-+ 
+This repository contains all the files prepared by the Lime Team as part of the assessed work for the module *Understanding Data and Their Environment* in the MSc Data Science 2024/25 program at the University of Manchester. The main objective of this work is to *formalize the provenance* of a survey that collected individual-level information about land ownership in the United Kingdom, as well as to construct an indicator measuring wealth based on the collected data.
+
+The repository is organized as follows:
+
+- _dataLime.xlsx_: Data collected after survey implementation
+- _metadata.xlsx_: Metadata with information about the survey and its attributes
+- _indicator.pdf_: Presentation explaining the construction of the indicator
+- _lime.provn_: Code for provenance modeling
+- _PROVNgraph.pdf_: Provenance graph
