@@ -12,7 +12,7 @@
 - Huang, Jiahui
 - New, Daniel
 
-This repository contains all the files prepared by the Lime Team as part of the assessed work for the module *Understanding Data and Their Environment* in the MSc Data Science 2024/25 program at the University of Manchester. The main objective of this work is to *formalize the provenance* of a survey that collected individual-level information about land ownership in the United Kingdom, as well as to construct an indicator measuring wealth based on the collected data.
+This repository contains all the files prepared by the Lime Team as part of the assessed work for the module *Understanding Data and Their Environment* in the MSc Data Science 2024/25 programme at the University of Manchester. The main objective of this work is to *formalize the provenance* of a survey that collected individual-level information about land ownership in the United Kingdom, as well as to construct an indicator measuring wealth based on the collected data.
 
 The repository is organized as follows:
 
