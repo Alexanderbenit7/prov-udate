@@ -1,5 +1,5 @@
 <div align="right">
-  <img src="./images/logo.png" alt="Lime Team Logo" width="200">
+  <img src="./images/logo.png" alt="Lime Team Logo" width="150">
 </div>
 
 ## Assessed Homework
