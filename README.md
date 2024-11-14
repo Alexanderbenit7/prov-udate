@@ -19,5 +19,5 @@ The repository is organized as follows:
 - _dataLime.xlsx_: Data collected after survey implementation
 - _metadata.xlsx_: Metadata with information about the survey and its attributes
 - _indicator.pdf_: Presentation explaining the construction of the indicator
-- _lime.provn_: Code for provenance modeling
-- _PROVNgraph.pdf_: Provenance graph
+- _limeCODE.provn_: Code for provenance modeling
+- _limePROVN.pdf_: Provenance graph
