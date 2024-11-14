@@ -1,0 +1,66 @@
+
+document
+  prefix ex <https://github.com/Alexanderbenit7/prov-udate/>
+
+  agent(ex:VioletTeam)
+  agent(ex:LimeTeam)
+  agent(ex:Qualtrics)
+  agent(ex:CitizensRegisteredAddressUK)
+  agent(ex:UKLandRegistry)
+
+  entity(ex:SurveyAboutLandOwnershipInUK)
+  entity(ex:DemographicDatasetRegisteredLandOwners)
+  entity(ex:RegisteredLandOwnershipInformationDataset)
+  entity(ex:WealthIndicator)
+  entity(ex:Metadata)
+
+  activity(ex:CollectionOfIndividualLevelResponses, -, -)
+  activity(ex:SurveyResponse, -, -)
+  activity(ex:CollectionInformationRegisteredLandOwnerAGE, -, -)
+  activity(ex:CollectionInformationRegisteredLandOwnerGENDER, -, -)
+  activity(ex:CollectionInformationParentalHigherEDUCATION)
+  activity(ex:CollectionInformationHouseholdINCOME, -, -)
+  activity(ex:CollectionInformationOwnedLandLOCATION, -, -)
+  activity(ex:CollectionInformationCurrentPropertyVALUE, -, -)
+  activity(ex:CollectionLandRegisteredLENGHT, -, -)
+  activity(ex:AssigningWeights, -, -)
+  activity(ex:VariableTransformation, -, -)
+
+  wasGeneratedBy(ex:WealthIndicator, ex:VariableTransformation, -)
+  used(ex:VariableTransformation, ex:AssigningWeights, -)
+
+  used(ex:AssigningWeights, ex:CollectionLandRegisteredLENGHT, -)
+  used(ex:AssigningWeights, ex:CollectionInformationCurrentPropertyVALUE, -)
+  used(ex:AssigningWeights, ex:CollectionInformationOwnedLandLOCATION, -)
+  used(ex:AssigningWeights, ex:CollectionInformationHouseholdINCOME, -)
+  used(ex:AssigningWeights, ex:CollectionInformationParentalHigherEDUCATION, -)
+
+  wasAssociatedWith(ex:CollectionInformationParentalHigherEDUCATION, ex:DemographicDatasetRegisteredLandOwners, -)
+  wasAssociatedWith(ex:CollectionInformationHouseholdINCOME, ex:DemographicDatasetRegisteredLandOwners, -)
+  wasAssociatedWith(ex:CollectionInformationRegisteredLandOwnerGENDER, ex:DemographicDatasetRegisteredLandOwners, -)
+  wasAssociatedWith(ex:CollectionInformationRegisteredLandOwnerAGE, ex:DemographicDatasetRegisteredLandOwners, -)
+
+  wasAssociatedWith(ex:CollectionInformationOwnedLandLOCATION, ex:RegisteredLandOwnershipInformationDataset, -)
+  wasAssociatedWith(ex:CollectionInformationCurrentPropertyVALUE, ex:RegisteredLandOwnershipInformationDataset, -)
+  wasAssociatedWith(ex:CollectionLandRegisteredLENGHT, ex:RegisteredLandOwnershipInformationDataset, -)
+
+  wasAttributedTo(ex:DemographicDatasetRegisteredLandOwners, ex:LimeTeam)
+  wasAttributedTo(ex:RegisteredLandOwnershipInformationDataset, ex:VioletTeam)
+  wasAttributedTo(ex:Metadata, ex:LimeTeam)
+
+  wasGeneratedBy(ex:AssigningWeights, ex:LimeTeam, -)
+
+  actedOnBehalfOf(ex:LimeTeam, ex:UKLandRegistry, -)
+  actedOnBehalfOf(ex:VioletTeam, ex:UKLandRegistry, -)
+
+  used(ex:SurveyAboutLandOwnershipInUK, ex:SurveyResponse, -)
+
+  wasGeneratedBy(ex:DemographicDatasetRegisteredLandOwners, ex:SurveyAboutLandOwnershipInUK, -)
+  wasGeneratedBy(ex:RegisteredLandOwnershipInformationDataset, ex:SurveyAboutLandOwnershipInUK, -)
+
+  used(ex:SurveyAboutLandOwnershipInUK, ex:Qualtrics, -)
+  used(ex:Qualtrics, ex:CollectionOfIndividualLevelResponses, -)
+
+  wasAssociatedWith(ex:CollectionOfIndividualLevelResponses, ex:CitizensRegisteredAddressUK, -)
+
+endDocument

@@ -1,20 +1,31 @@
 
 document
-  prefix ex <https://github.com/Alexanderbenit7/prov-udate/>
+  prefix ex <http://example.org/>
+  prefix s <http://schema.org/>
 
-  agent(ex:VioletTeam)
-  agent(ex:LimeTeam)
-  agent(ex:Qualtrics)
+  agent(ex:VioletTeam,
+    [prov:type='prov:Group', s:name="Violet Team"])
+  agent(ex:LimeTeam,
+    [prov:type='prov:Group', s:name="Lime Team"])
+  agent(ex:Qualtrics,
+    [prov:type='prov:Software', s:name="Qualtrics"])
   agent(ex:CitizensRegisteredAddressUK)
-  agent(ex:UKLandRegistry)
+  agent(ex:UKLandRegistry, 
+    [prov:type='prov:Institution', s:name="HM Land Registry"])
 
-  entity(ex:SurveyAboutLandOwnershipInUK)
-  entity(ex:DemographicDatasetRegisteredLandOwners)
-  entity(ex:RegisteredLandOwnershipInformationDataset)
-  entity(ex:WealthIndicator)
-  entity(ex:Metadata)
+  entity(ex:SurveyAboutLandOwnershipInUK,
+    [prov:type='s:Survey'])
+  entity(ex:DemographicDatasetRegisteredLandOwners,
+    [prov:type='s:Dataset'])
+  entity(ex:RegisteredLandOwnershipInformationDataset,
+    [prov:type='s:Dataset'])
+  entity(ex:WealthIndicator,
+    [prov:type='s:Indicator'])
+  entity(ex:MetadataLime,
+    [prov:type='s:Metada'])
 
-  activity(ex:CollectionOfIndividualLevelResponses, -, -)
+  activity(ex:CollectionOfIndividualLevelResponses,
+    [ prov:type='ex:Collection', prov:label="Collection of indiviual-level responses" ])
   activity(ex:SurveyResponse, -, -)
   activity(ex:CollectionInformationRegisteredLandOwnerAGE, -, -)
   activity(ex:CollectionInformationRegisteredLandOwnerGENDER, -, -)
@@ -23,8 +34,10 @@ document
   activity(ex:CollectionInformationOwnedLandLOCATION, -, -)
   activity(ex:CollectionInformationCurrentPropertyVALUE, -, -)
   activity(ex:CollectionLandRegisteredLENGHT, -, -)
-  activity(ex:AssigningWeights, -, -)
-  activity(ex:VariableTransformation, -, -)
+  activity(ex:AssigningWeights,
+    [ prov:type='ex:Calculation', prov:label="Weight calculation" ])
+  activity(ex:VariableTransformation,
+    [ prov:type='ex:Calculation', prov:label="Variable transformation" ])
 
   wasGeneratedBy(ex:WealthIndicator, ex:VariableTransformation, -)
   used(ex:VariableTransformation, ex:AssigningWeights, -)
@@ -46,7 +59,9 @@ document
 
   wasAttributedTo(ex:DemographicDatasetRegisteredLandOwners, ex:LimeTeam)
   wasAttributedTo(ex:RegisteredLandOwnershipInformationDataset, ex:VioletTeam)
-  wasAttributedTo(ex:Metadata, ex:LimeTeam)
+  wasAttributedTo(ex:MetadataLime, ex:LimeTeam)
+
+  wasGeneratedBy(ex:AssigningWeights, ex:LimeTeam, -)
 
   actedOnBehalfOf(ex:LimeTeam, ex:UKLandRegistry, -)
   actedOnBehalfOf(ex:VioletTeam, ex:UKLandRegistry, -)
@@ -56,7 +71,8 @@ document
   wasGeneratedBy(ex:DemographicDatasetRegisteredLandOwners, ex:SurveyAboutLandOwnershipInUK, -)
   wasGeneratedBy(ex:RegisteredLandOwnershipInformationDataset, ex:SurveyAboutLandOwnershipInUK, -)
 
-  used(ex:SurveyAboutLandOwnershipInUK, ex:Qualtrics, -)
+  used(ex:SurveyAboutLandOwnershipInUK, ex:Qualtrics,
+    2024-09-27T08:00:00)
   used(ex:Qualtrics, ex:CollectionOfIndividualLevelResponses, -)
 
   wasAssociatedWith(ex:CollectionOfIndividualLevelResponses, ex:CitizensRegisteredAddressUK, -)
