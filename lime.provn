@@ -12,6 +12,7 @@ document
   entity(ex:DemographicDatasetRegisteredLandOwners)
   entity(ex:RegisteredLandOwnershipInformationDataset)
   entity(ex:WealthIndicator)
+  entity(ex:Metadata)
 
   activity(ex:CollectionOfIndividualLevelResponses, -, -)
   activity(ex:SurveyResponse, -, -)
@@ -45,6 +46,7 @@ document
 
   wasAttributedTo(ex:DemographicDatasetRegisteredLandOwners, ex:LimeTeam)
   wasAttributedTo(ex:RegisteredLandOwnershipInformationDataset, ex:VioletTeam)
+  wasAttributedTo(ex:Metadata, ex:LimeTeam)
 
   actedOnBehalfOf(ex:LimeTeam, ex:UKLandRegistry, -)
   actedOnBehalfOf(ex:VioletTeam, ex:UKLandRegistry, -)
